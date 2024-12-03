@@ -1,1 +1,20 @@
-<h1>Admin Side</h1>
+<%= javascript_include_tag 'data_table' %>
+
+<div>
+  <%= render partial: "layouts/splitter_logo"%>
+  <div class="admin-table-container">
+    <table id="calculations-datatable" class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Bill Amount</th>
+          <th>Tip Percentage</th>
+          <th>Tip Amount</th>
+          <th>Total Bill</th>
+          <th>Number of People</th>
+          <th>Per Person Amount</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
