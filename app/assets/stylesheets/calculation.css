@@ -1,0 +1,209 @@
+body {
+  background-color: #C5E4E7;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Courier New", monospace;
+}
+
+.tip-calculator {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo-text {
+  color: #3D6666;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.calculator-container {
+  background-color: white;
+  border-radius: 25px;
+  padding: 32px;
+  width: 60%;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+}
+
+.input-section {
+  flex: 1;
+}
+
+.input-group {
+  margin-bottom: 40px;
+}
+
+.input-group label {
+  display: block;
+  color: #5E7A7D;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-family: "Space Mono", "Courier New", monospace;
+}
+
+.icon {
+  width: 12px;
+  height: 18px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 90%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 6px 17px;
+  background: #F3F9FA;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-align: right;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  color: #00474B;
+  font-weight: 700;
+}
+
+.error-display {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #26C2AE;
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.tip-btn {
+  background: #00474B;
+  border-radius: 5px;
+  padding: 6px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+}
+
+.tip-btn.active {
+  background-color: #26c0ab;
+  color: white;
+}
+
+.tip-btn:hover {
+  background: #9FE8DF;
+  color: #00474B;
+}
+
+.tip-btn.active {
+  background: #26C2AE;
+  color: #fffff;
+}
+
+.tip-btn.custom {
+  background: #F3F9FA;
+  color: #547878;
+  text-align: right;
+  padding: 4px 14px;
+  width: 72%;
+}
+
+.tip-btn.custom:focus {
+  outline: none;
+  border: 2px solid #26C2AE;
+}
+
+.results-section {
+  flex: 1;
+  background: #00474B;
+  border-radius: 15px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.result-label {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.per-person {
+  color: #7F9D9F;
+  font-size: 13px;
+}
+
+.result-amount {
+  color: #26C2AE;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: auto;
+  background: #26C2AE;
+  border-radius: 5px;
+  border: none;
+  padding: 9px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #00474B;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Space Mono', monospace;
+}
+
+.reset-btn:hover {
+  background: #9FE8DF;
+}
+
+.icon-person {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+  .calculator-container {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .tip-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .results-section {
+    padding: 20px;
+  }
+
+  .result-amount {
+    font-size: 32px;
+  }
+}
